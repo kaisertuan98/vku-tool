@@ -1,0 +1,21 @@
+{
+    "name": "Auto điền đánh giá môn học VKU",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "Ứng dụng giúp bạn thao tác nhanh hơn.",
+    "browser_action": {
+        "default_popup": "popup/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+              "<all_urls>"
+            ],
+            "css": ["style.css"],
+            "js": ["lib/jquery.min.js","popup.js"]
+        }
+    ],
+    "web_accessible_resources": [
+    "images/background_button.png"
+    ]
+}
